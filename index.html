@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Happy Birthday Priscilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div class="moon" aria-hidden="true"></div>
+<div class="cloud c1" aria-hidden="true"></div>
+<div class="cloud c2" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="hills" aria-hidden="true"></div>
+
+<header class="hero">
+  <img class="bunting" src="img/banner.png" alt="Happy birthday bunting">
+  <div class="portrait tilt" data-depth="1">
+    <img src="img/user.png" alt="Priscilia">
+    <i class="spark s1">✦</i><i class="spark s2">✧</i><i class="spark s3">✦</i><i class="spark s4">✧</i>
+  </div>
+  <h1 class="typewrap" aria-live="polite"><span id="typewriter"></span><i class="cursor" aria-hidden="true"></i></h1>
+  <p class="hero-name">Priscilia ELIAS</p>
+  <a class="scroll-hint" href="#letter" aria-label="Scroll to your letter">scroll down</a>
+</header>
+
+<main>
+  <section class="wrap" id="letter" data-r>
+    <div class="letter tilt">
+      <span class="heart" aria-hidden="true">❤️</span>
+      <h2>Chère <strong>Priscilia</strong></h2>
+      <p style="--d:.25s">Aujourd'hui je ne célèbre pas seulement<br> votre anniversaire, je célèbre la<mark>femme extraordinaire🎉</mark> que tu es!</p>
+      <p style="--d:.4s">Tu es à la fois pour moi comme une mère, une soeur, une amie avec tes conseils, ton amour et ta force! 🍁</p>
+      <p style="--d:.55s">Merci pour ta présence, ta patience et ton coeur si grand. 🌺</p>
+      <p style="--d:.1s">Je prie Dieu de te garder longtemps en bonne santé,<br> de te compbler de bonheur, de paix et de toutes les belles choses que tu mérites. 🍂</p>
+      <p style="--d:.55s"><mark>JOYEUX ANNIVERSAIRE🍂</mark></p><br>
+      <p style="--d:.1s"><em>Clovis C. ADJOVI</em></p>
+    </div>
+  </section>
+
+  <section class="cake-sec wrap" data-r>
+    <div class="cake-stage"><span class="ring"></span><img class="cake" src="img/cad.jpeg" alt="Birthday cake"></div>
+    <button class="pill" id="wishBtn" type="button">Cliquez ici pour faire un voeux et scannez!</button>
+    <p class="wish" id="wishMsg" aria-live="polite"></p>
+  </section>
+
+  <section class="memories wrap" data-r>
+    <h2 class="sec-title">Our old memories</h2>
+    <div class="stack" id="stack" aria-label="Photo memories">
+      <figure class="polaroid"><img src="img/1.jpeg" alt="Group selfie" draggable="false"><figcaption>En mode young women 😉</figcaption></figure>
+      <figure class="polaroid"><img src="img/2.jpeg" alt="Friends in class" draggable="false"><figcaption>Wedding moment</figcaption></figure>
+      <figure class="polaroid"><img src="img/3.jpeg" alt="Friends on the steps" draggable="false"><figcaption>A ta santé 🍾</figcaption></figure>
+      <figure class="polaroid"><img src="img/4.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/5.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/6.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/7.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/8.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/9.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Retro 🖼</figcaption></figure>
+      <figure class="polaroid"><img src="img/10.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Belle commeune fleur 🌹</figcaption></figure>
+      <figure class="polaroid"><img src="img/11.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>un moment inoubliable</figcaption></figure>
+      <figure class="polaroid"><img src="img/12.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Retro 📸</figcaption></figure>
+      <figure class="polaroid"><img src="img/13.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>En Maman</figcaption></figure>
+      <figure class="polaroid"><img src="img/14.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/15.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Encore une</figcaption></figure>
+      <figure class="polaroid"><img src="img/16.jpeg" alt="Friends lined up outside" draggable="false"><figcaption>Vos trésors 💕</figcaption></figure>
+    </div>
+    <div class="ctrl">
+      <button id="prevImg" class="round" aria-label="Previous photo">‹</button>
+      <span id="count" class="count">1 / 4</span>
+      <button id="nextImg" class="round" aria-label="Next photo">›</button>
+    </div>
+  </section>
+
+  <section class="final wrap" data-r>
+    <h2 class="sec-title">Final message</h2>
+    <div class="card-wrap tilt" id="cardContainer">
+      <div class="card" id="card">
+        <div class="side front">
+          <h3>Happy Birthday</h3>
+          <p>Cliquez ici pour ouvrir la carte.</p>
+          <img src="img/cake.svg" alt="">
+          <button class="pill dark" id="toggleButton" type="button">Ouvrez la carte!</button>
+        </div>
+        <div class="side back">
+          <h3>Happy Birthday</h3>
+          <p>may your day be filled with love, laughter, and unforgettable moments. wishing you all the happiness your heart can hold. enjoy your special day to the fullest! may this year bring you endless joy, success, and beautiful surprises. happy birthday, celebrate big, smile brighter, and create memories that last forever!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" data-r>
+  <p>Thanks for visiting, stay awesome 🪔</p>
+  <small>Créé avec ❤ par Clovis C. ADJOVI</small>
+</footer>
+<div id="lanterns" aria-hidden="true"></div>
+<script src="background.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
